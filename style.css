@@ -1,0 +1,65 @@
+body {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 15pt;
+    color:#9B870C;
+    background: black;
+    margin-top: 0px;
+}
+#marcadores{
+
+  margin: 0% 0% 0% 30%;
+  background-color: darkgrey;
+  border:2px solid black;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border-color: orange;
+}
+#tablero
+{
+    margin: 0% 0% 0% 25%;
+    width: 350px;
+    height: 350px;
+    border:2px solid black;
+    border-radius: 10px;
+    border-color: orange;
+}
+td{
+  width: 70px;
+  height: 70px;
+  border:2px solid black;
+  border-radius: 10px;
+  border-color: orange;
+  color:#9B870C;
+  font-size: 35px;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+#reiniciar
+{
+  margin: 10% 0% 0% 45%;
+  padding: 3%;
+
+}
+
+.boton{
+  padding: 5%;
+  border-radius:15px;
+  background-color:orange;
+  margin: 0% 0% 0% 3%;
+}
+#cuerpo{
+  margin: 5%;
+}
+
+#puntaje, #mejorpuntaje {
+  background-color: darkgrey;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  color: black;
+}
+#mandos{
+  margin: 0% 0% 0% 15%;
+}

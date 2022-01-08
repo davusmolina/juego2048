@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>2048 Por David Molina</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header" type="header">
+
+    <p id="titulo"> <strong> Esto es 2048 hecho por David Molina</strong>
+    </p>
+    <table id="marcadores">
+      <tr>
+       <td><span id="puntaje" class="marcadores">Puntaje: 000 </span>
+       </td>
+
+       <td><span id="mejorpuntaje" class="marcadores">#Movimi:  000 </span>
+       </td>
+    </table>
+    <button id="reiniciar" class="boton">ReIniciar juego</button>
+  </div>
+  <div type="boder" id="cuerpo">
+    <table id="tablero">
+      <caption><strong>Juega a 2048: </strong></caption>
+      <tr id="tr1">
+        <td>
+          <span class='editar' id="td1"></span>
+       </td>
+       <td>
+          <span id="td2"  class='editar'></span>
+       </td>
+       <td>
+            <span id="td3" class='editar'></span>
+       </td>
+       <td>
+            <span id="td4" class='editar'></span>
+       </td>
+       <td>
+            <span id="td5" class='editar'></span>
+       </td>
+      </tr>
+      <tr id="tr2" >
+        <td>
+           <span id="td6" class='editar'></span>
+        </td>
+        <td>
+            <span id="td7" class='editar'></span>
+        </td>
+        <td>
+             <span id="td8" class='editar'></span>
+        </t d>
+        <td>
+             <span id="td9" class='editar'></span>
+          </td>
+        <td>
+          <span id="td10" class='editar'></span>
+        </td>
+      </tr>
+      <tr id="tr3">
+        <td>
+            <span id="td11" class='editar'></span>
+        </td>
+        <td>
+            <span id="td12" class='editar'></span>
+        </td>
+        <td>
+            <span id="td13" class='editar'></span>
+        </td>
+        <td>
+            <span id="td14" class='editar' ></span>
+        </td>
+        <td>
+          <span id="td15" class='editar' ></span>
+        </td>
+      </tr>
+      <tr id="tr4">
+        <td>
+            <span id="td16" class='editar' ></span>
+        </td>
+        <td>
+             <span id="td17" class='editar'></span>
+        </td>
+        <td>
+             <span id="td18" class='editar'></span>
+        </td>
+        <td>
+            <span id="td19" class='editar' ></span>
+        </td>
+        <td>
+            <span id="td20" class='editar'></span>
+         </td>
+      </tr>
+      <tr id="tr5" >
+        <td>
+            <span id="td21" class='editar' ></span>
+         </td>
+        <td>
+            <span id="td22" class='editar' ></span>
+        </td>
+        <td>
+            <span id="td23" class='editar'></span>
+        </td>
+        <td>
+            <span id="td24" class='editar'></span>
+        </td>
+        <td>
+         <span id="td25" class='editar'></span>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  <div id="mandos">
+    <button class="boton" id="arriba">Arriba</button>
+    <button class="boton" id="abajo">Abajo</button>
+    <button id="izquierda" class="boton">Izquierda</button>
+    <button id="derecha" class="boton">Derecha</button>
+  </div>
+  <div type="footer">
+   <p><strong>Todos los derechos reservados D&M </strong></p>
+  </div>
+
+  <!-- Project -->
+  <!-- <script src="http://localhost:35729/livereload.js"> -->
+
+  <!-- </script> -->
+  <script src="main.js"></script>
+</body>
+</html>
