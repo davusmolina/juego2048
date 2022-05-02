@@ -1,0 +1,117 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark: #232830;
+	--very-light-pink: #c7c7c7;
+	--text-input-field: #f7f7f7;
+	--hospital-green: #acd9b2;
+	--font: 'Quicksand', sans-serif;
+	--g: 1.8rem;
+	--m: 1.6rem;
+	--p: 1.4rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: var(--font);
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2vw;
+
+	height: 10vh;
+	width: 100vw;
+
+	border-bottom: 1px solid var(--very-light-pink);
+}
+
+img[src$='icon_menu.svg'] {
+	display: none;
+}
+
+img[src$='logo_bota_fora.svg'] {
+	height: var(--g);
+	margin-right: 2vw;
+	cursor: pointer;
+}
+
+.nav-left,
+.nav-right,
+.nav-icons,
+.nav-left-center,
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	padding: 1vw 1vw;
+}
+li:hover {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border: 1.4px solid var(--hospital-green);
+	border-radius: 10px;
+}
+li a {
+	text-decoration: none;
+	font-size: var(--m);
+	color: var(--very-light-pink);
+}
+
+.nav-right :nth-child(1) {
+	color: var(--very-light-pink);
+	font-size: var(--p);
+	letter-spacing: -0.5px;
+	font-weight: 350;
+	margin-right: 8px;
+}
+img[src$='icon_shopping_cart.svg'] {
+	cursor: pointer;
+}
+.nav-right :nth-child(3) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	bottom: 10px;
+	right: 10px;
+
+	width: 15px;
+	height: 15px;
+
+	background-color: var(--hospital-green);
+	border-radius: 50%;
+	font-size: var(10px);
+	color: var(--white);
+	cursor: pointer;
+}
+
+@media (max-width: 740px) {
+	img[src$='icon_menu.svg'] {
+		display: inline-block;
+		cursor: pointer;
+	}
+	img[src$='logo_bota_fora.svg'] {
+		margin-right: 0;
+	}
+	.nav-left-center {
+		display: none;
+	}
+	.nav-right :nth-child(1) {
+		display: none;
+	}
+}

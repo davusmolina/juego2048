@@ -1,0 +1,108 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark: #232830;
+	--very-light-pink: #c7c7c7;
+	--text-input-field: #f7f7f7;
+	--hospital-green: #acd9b2;
+	--font: 'Quicksand', sans-serif;
+	--g: 1.8rem;
+	--m: 1.6rem;
+	--p: 1.4rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: var(--font);
+}
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 20vh auto;
+
+	width: 80vw;
+	min-width: 250px;
+	max-width: 400px;
+}
+
+.logo-phone {
+	width: 150px;
+	margin-bottom: 4vh;
+	align-self: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+label {
+	width: 70%;
+	align-self: center;
+
+	font-size: var(--g);
+	font-weight: bold;
+}
+
+input[type='text'] {
+	align-self: center;
+	margin-top: 5px;
+	margin-bottom: 6vh;
+	padding-left: 10px;
+
+	width: 70%;
+	height: 6vh;
+
+	border: none;
+	background-color: var(--text-input-field);
+	border-radius: 10px;
+}
+
+input[type='submit'] {
+	align-self: center;
+	margin-bottom: 4vh;
+
+	width: 70%;
+	height: 8vh;
+
+	background-color: var(--hospital-green);
+	border-radius: 10px;
+	border: none;
+	font-weight: bold;
+	font-size: var(--m);
+	color: var(--white);
+}
+
+a {
+	align-self: center;
+
+	font-size: var(--p);
+	text-decoration: none;
+	color: var(--hospital-green);
+	margin-bottom: 8vh;
+}
+
+input[type='button'] {
+	align-self: center;
+
+	width: 70%;
+	height: 8vh;
+
+	background-color: var(--white);
+	border-radius: 10px;
+	border: solid 1px var(--hospital-green);
+	color: var(--hospital-green);
+	font-weight: bold;
+	font-size: var(--m);
+}
+
+@media (max-width: 400px) {
+	input[type='button'] {
+		margin-top: 5vh;
+	}
+}

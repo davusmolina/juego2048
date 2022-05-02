@@ -1,0 +1,53 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark: #232830;
+	--very-light-pink: #c7c7c7;
+	--text-input-field: #f7f7f7;
+	--hospital-green: #acd9b2;
+	--font: 'Quicksand', sans-serif;
+	--g: 1.8rem;
+	--m: 1.6rem;
+	--p: 1.4rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: var(--font);
+}
+
+.cont {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+figure {
+	display: flex;
+	flex-direction: column;
+	margin: 4vh 2vw;
+}
+figcaption {
+	display: flex;
+	justify-content: space-between;
+}
+
+img[src^='./Imagenes/moto'] {
+	width: 240px;
+	height: 240px;
+	object-fit: cover;
+
+	border-radius: 15px;
+}
+/* img[src$='bt_add_to_cart.svg'] {
+	/* width: 30px; */
+/* height: 50px; */
+/* } */
+*/ p {
+	font-size: var(--g);
+	font-weight: bold;
+	color: var(--very-light-pink);
+}

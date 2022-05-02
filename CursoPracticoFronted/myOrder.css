@@ -1,0 +1,95 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark: #232830;
+	--very-light-pink: #c7c7c7;
+	--text-input-field: #f7f7f7;
+	--hospital-green: #acd9b2;
+	--font: 'Quicksand', sans-serif;
+	--g: 1.8rem;
+	--m: 1.6rem;
+	--p: 1.4rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: var(--font);
+}
+
+main {
+	margin: 10vh auto;
+
+	width: 300px;
+}
+
+h1 {
+	font-size: var(--g);
+	font-weight: bold;
+	margin-bottom: 8vh;
+}
+
+.total-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4vh;
+}
+.totalArticles-container {
+	display: inline-block;
+}
+.totalArticles-container h2 {
+	font-size: var(--m);
+	font-weight: bold;
+}
+.totalArticles-container span {
+	color: var(--very-light-pink);
+	font-size: var(--p);
+}
+.total-container:nth-child(2) {
+	font-size: var(--g);
+	font-weight: bold;
+}
+
+figure {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 2vh;
+
+	width: 100%;
+	height: 70px;
+}
+figure img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+
+	border-radius: 5px;
+}
+
+figcaption {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 8px;
+
+	width: 230px;
+	height: 100%;
+}
+
+figcaption h3 {
+	font-size: var(--p);
+	font-weight: 300;
+	color: var(--very-light-pink);
+}
+
+figcaption span {
+	font-size: var(--m);
+	font-weight: bold;
+}
